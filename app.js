@@ -1,11 +1,12 @@
 const express = require('express');
 
+const path = require('path');
+
 let app = express();
 
 app.get('/', function (req, res) {
-    res.send("<h1>Título de nível 1</h1>")
+    res.send(path.join(__dirname, '/index.html'))
 });
-
 
 // sempre deve ficar no final do arquivo
 app.listen(3000, function () {
