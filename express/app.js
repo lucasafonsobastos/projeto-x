@@ -5,7 +5,7 @@ const path = require('path');
 let app = express();
 
 app.get('/', function (req, res) {
-    res.send(path.join(__dirname, '/index.html'))
+    res.sendFile(path.join(__dirname, '/views/index.html'))
 });
 
 // sempre deve ficar no final do arquivo
