@@ -1,5 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap');
 
-body * {
+body {
     font-family: 'Ropa Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header > * {
+    display: inline-block;
+}
+
+#header-menu{
+    width: 30px;
+    margin-left: 65%;
+}
+
+body > header {
+    padding: 8px 44px;
+    font-size: 20px;
+    line-height: 20px;
+    box-shadow: 1px 1px 10px gray;
+}
+
+#banner {
+    margin: 20px 44px
+}
+
+#sales span {
+    display: inline-block;
+    line-height: 27px;
+}
+
+#sales > * p {
+    color: red;
+    text
 }
