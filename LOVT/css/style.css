@@ -12,13 +12,12 @@ header > * {
 
 #header-menu{
     width: 30px;
-    margin-left: 65%;
 }
 
 body > header {
     padding: 8px 44px;
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 22px;
+    line-height: 14px;
     box-shadow: 1px 1px 10px gray;
 }
 
