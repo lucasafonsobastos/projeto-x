@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap');
 
 html {
-    font-size: 1rem;
+    width: 100%;
 }
 
 body {
@@ -10,9 +10,6 @@ body {
     margin: 0;
     padding: 0;
     color: #777777;
-}
-
-body * {
     box-sizing: border-box;
 }
 
@@ -21,20 +18,28 @@ header > * {
     margin: 0;
 }
 
+body > header {
+    width: 100%;
+    font-size: 1.5rem;
+    line-height: 0 .2vh 0 0 ;
+    box-shadow: 0 .2vh 0 0 gray;
+}
+
+header > .logo {
+    padding-left: 10px;
+}
+
 #header-menu{
     width: 30px;
     float: right;
+    padding: 5px;
 }
 
 body > main {
     width: 100%;
-}
-
-body > header {
-    padding: 1rem 2rem;
-    font-size: 1.5rem;
-    line-height: 1rem;
-    box-shadow: .1rem .1rem 1rem gray;
+    display: box;
+    justify-content: space-around;
+    align-content: center;
 }
 
 #banner {
@@ -46,20 +51,15 @@ body > header {
 }
 
 #sales {
-    padding: 0 1rem;
-    width: 100%;
-}
-
-#sales article {
-    display: inline-block;
-    width: 100%;
-    margin-bottom: 1rem;
-
+    width: 80%;
+    display: inline;
+    align-items: center;
+    
 }
 
 #sales > article img {
-    width: 100%;
-    margin-bottom: -.5rem;
+    width: 95%;
+    margin-bottom: 2px;
 }
 
 #sales > article > footer {
