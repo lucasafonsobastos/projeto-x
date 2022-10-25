@@ -11,11 +11,12 @@ body {
     padding: 0;
     color: #777777;
     box-sizing: border-box;
+   
 }
 
 header > * {
     display: inline-block;
-    margin: 0;
+    margin: 3vh 0 3vh 0 ;
 }
 
 body > header {
@@ -26,40 +27,47 @@ body > header {
 }
 
 header > .logo {
-    padding-left: 10px;
+    padding-left: 10vh;
 }
 
 #header-menu{
     width: 30px;
     float: right;
     padding: 5px;
+    padding-right: 10vh;
 }
 
-body > main {
+main {
     width: 100%;
-    display: box;
-    justify-content: space-around;
-    align-content: center;
+    display: inline-flex;
+    flex-direction: column;
 }
 
 #banner {
-    margin: 1rem 1rem;
+    margin: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #banner img {
-    width: 100%;
+    width: 700px;
 }
 
 #sales {
-    width: 80%;
-    display: inline;
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row;
     align-items: center;
-    
+
 }
 
 #sales > article img {
-    width: 95%;
-    margin-bottom: 2px;
+    width: 85vh;
+}
+
+#sales > article {
+    padding: 8vh;
 }
 
 #sales > article > footer {
@@ -89,4 +97,19 @@ body > main {
 
 .opaque {
     opacity: 0.5;
+}
+
+@media (max-width: 800px){
+    #banner img {
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 450px){
+    #sales {
+        display: inline-flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
