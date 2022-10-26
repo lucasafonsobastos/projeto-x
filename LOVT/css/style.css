@@ -98,13 +98,25 @@ main {
     text-align: center;
 }
 
-.opaque {
+
+/*  Section - You Style */
+#your-style {
+    display: flex;
+    flex-direction: column;
+}
+
+#your-style > div img {
+    width: 100%;
     opacity: 0.5;
 }
 
+#your-style > div span {
+    color: rgb(0, 0, 0);
+}
+
+
 
 /* Footer */
-
 .rodape {
     width: 100%;
     background-color: rgb(44, 44, 44);
